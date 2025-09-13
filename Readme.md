@@ -1,4 +1,4 @@
 # Admin_Portal 
-<div style="display: flex; align-items:center; justify-content: center; width: 30%;"><img src="./assets/icons/logo.png"  alt="admin_portal" width="50rem" height="50rem"><h3 style="font-size:2rem">EGA<span style="color:#ff7782">TOR</span></h3></div>
-
+<!-- 
+![alt text](assets/icons/logo.png) -->
 - View [Live](https://lahfen-brandy.github.io/Admin_Portal/)
