@@ -133,15 +133,21 @@ b{
 
 aside{
     height: 100vh;
-    background: gray;
 }
 
+
+/* ----------- ASIDE ----------- */
 aside .top{
     background: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    gap: 1rem;
 }
 
 aside .logo img{
@@ -151,7 +157,27 @@ aside .logo img{
 
 
 
+/* ------ SIDEBar -------- */
+aside .side-bar{
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
 
+aside h3{
+    font-weight: 500;
+}
+
+aside .side-bar a{
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+}
 
 .poppins-light {
   font-family: "Poppins", sans-serif;
