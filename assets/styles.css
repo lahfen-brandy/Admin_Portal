@@ -507,7 +507,7 @@ main .recent-orders a {
     width: 100%;
 }
 
-.right .sales-analytics .item .icon{
+.right .sales-analytics .item .icon {
     padding: 0.6rem;
     color: var(--color-white);
     border-radius: 50%;
@@ -515,15 +515,15 @@ main .recent-orders a {
     display: flex;
 }
 
-.right .sales-analytics .item .offline .icon{
+.right .sales-analytics .item .offline .icon {
     background: var(--color-danger);
 }
 
-.right .sales-analytics .item .customers.icon{
+.right .sales-analytics .item .customers.icon {
     background: var(--color-success);
 }
 
-.right .sales-analytics .item .add-product{
+.right .sales-analytics .item .add-product {
     background: transparent;
     border: 2px dashed var(--color-primary);
     color: var(--color-primary);
@@ -533,14 +533,14 @@ main .recent-orders a {
 
 }
 
-.right .sales-analytics .item .div{
+.right .sales-analytics .item .div {
     display: flex;
     align-items: center;
     gap: 0.6rem;
 }
 
 
-.right .sales-analytics .item .div h3{
+.right .sales-analytics .item .div h3 {
     font-weight: 600;
 }
 
@@ -548,29 +548,33 @@ main .recent-orders a {
 
 
 
-/* ================ Media Screens ================ */
-@media screen and (max-width: 1200px){
-    .contianer{
+/* ================ Media Screen For Tablets ================ */
+@media screen and (max-width: 1200px) {
+    .contianer {
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
     }
 
-    aside .logo h2{
+    aside .logo h2 {
         display: none;
     }
-    aside .sidebar h3{
+
+    aside .sidebar h3 {
         display: none;
     }
-    aside .sidebar a{
+
+    aside .sidebar a {
         width: 5.6rem;
     }
-    aside .sidebar a:last-child{
+
+    aside .sidebar a:last-child {
         position: relative;
         margin-top: 1.8rem;
     }
 
     main .insights {
-        grid-template-columns: 1fr; /* for the card */
+        grid-template-columns: 1fr;
+        /* for the card */
         gap: 0;
     }
 
@@ -581,8 +585,86 @@ main .recent-orders a {
         transform: translateX(-50%);
         margin: 2rem 0 0 0 8.8rem;
     }
+
+    main .recent-orders table {
+        width: 83vw;
+    }
+
+    main table tbody tr td:last-child,
+    main table tbody tr td:first-child {
+        display: none;
+    }
 }
 
+
+/* ================ Media Screen For Mobile ================ */
+@media screen and (max-width: 768){
+    .constianer{
+        width: 100%;
+    }
+
+    aside {
+        position: fixed;
+        left: 0;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+    }
+
+    aside .logo{
+        margin-left: 1rem;
+    }
+
+    aside .logo h2{
+        display: inline;
+    }
+
+    aside .logo h3{
+        display: inline;
+    }
+
+    aside .sidebar a{
+        width: 100%;
+        height: 3.4rem;
+    }
+    
+    aside .sidebar a:last-child{
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    aside .close{
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main{
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+    main .recent-orders{
+        position: relative;
+        margin: 3rem 0 0 0 ;
+        width: 100%;
+    }
+    
+    main .recent-orders table{
+        width: 100%;
+        margin: 0;
+    }
+
+    .right{
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+    .right .top{}
+}
 
 
 
