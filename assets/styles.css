@@ -601,11 +601,12 @@ main .recent-orders a {
 @media screen and (max-width: 768){
     .constianer{
         width: 100%;
+        grid-template-columns: 1fr;
     }
 
     aside {
         position: fixed;
-        left: 0;
+        left: 100%;
         background: var(--color-white);
         width: 18rem;
         z-index: 3;
@@ -613,6 +614,15 @@ main .recent-orders a {
         height: 100vh;
         padding-right: var(--card-padding);
         display: none;
+        animation: showMenu 400ms ease forwards; /* with forward it
+        comes and doesn't go back, without it, it will go back
+        */
+    }
+
+    @keyframes showMenu {
+        to{
+            left: 0;
+        }
     }
 
     aside .logo{
@@ -663,8 +673,43 @@ main .recent-orders a {
         margin: 0 auto 4rem;
     }
 
-    .right .top{}
+    .right .top{
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+    .right .top .theme-toggler{
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+    .right .profile .info{
+        display: none;
+    }
+
+    .right .top button{
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+
+    .right .top button span{
+        font-size: 2rem;
+    }
 }
+
 
 
 
