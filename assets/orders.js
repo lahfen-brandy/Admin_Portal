@@ -3,7 +3,7 @@ const Orders = [
         productName: 'Foldable Mini Drone',
         productNumber: '85631',
         paymentStatus: 'Due',
-        shipping: 'Pending' 
+        shipping: 'Pending'
     },
     {
         productName: 'LARVENDER KF102 Drone',
